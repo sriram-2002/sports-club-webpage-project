@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="animation/animate.min.css">
+	
+	<style type="text/css">.btn-grad {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)}
+.btn-grad:hover { background-position: right center; }
+
+	
+		.a #b{
+			text-decoration: none;
+			font-size: 35px;
+			padding: 20px;
+		    background-color: grey;
+			color: white;
+			display:inline-block;
+			float: right;
+			margin: 5px;
+			margin-bottom: 20px;
+
+		    }
+		    
+		    .a #b:hover{
+		    	background-color: purple;
+
+		    }
+		    
+		    #a{
+		    	float:left;
+		    }
+
+		    body{
+		    	background-color:black;
+		    	background-size: cover;
+		    }
+		    .a #b.active{
+		    	background-color:purple;
+		    }
+		 
+		    .scrolling img{
+            	height: 500px;
+            	width: 1200px;
+            
+            }
+            .scrolling{
+            	
+            	max-width: 1170;
+            	display: inline;
+            	
+
+            }
+            .c li{
+            	list-style-type: none;
+            	 }
+            .c li:hover{
+            	color:purple;
+            	
+
+            }
+            .c {
+            	color: white;
+            	margin-top: 10px;
+            	width: 100%;
+            	height: 700px;
+            	
+            	padding-top: 30px;
+            
+      
+                }
+                
+                .c ul{
+                	padding-left: 150px;
+                	padding-right: 150px;
+                }
+                .c i li{
+                     padding-top: 50px;
+                     font-size: x-large;
+                }
+                .d{
+                	float:right;
+                	font-size: 50px;
+          
+                }
+                
+                  #e{
+                  	font-size: 50px;
+                  	font-family: serif;
+                  }
+                  .e{
+                  	background:linear-gradient(to right,purple,white,purple);
+                  	background-size: 200%;
+
+                  }
+                  .e:hover{
+                  	background-position-x:100%;
+                  	
+
+                  }
+                </style>
+	<title></title>
+	<link rel="stylesheet" href="owl\owl.carousel.min.css">
+<link rel="stylesheet" href="owl\owl.theme.default.min.css">
+<script src="owl/jquery.min.js"></script>
+<script src="owl/owl.carousel.js"></script>
+
+</head>
+<body>
+<div class="a"><nav>
+	<a id="a" href="About.html"><img class="animated  zoomIn delay-1s" src="logo1.png" height="100px" width="100px"></a>
+	<a id="b" href="Contact Us.html">Contact Us</a>
+	<a id="b" href="Subscription.html">Subscription</a>
+    <a id="b" href="Sports.html">Sports</a>
+	<a id="b" class="active" href="About.html">About</a>
+</nav></div>
+<div class="scrolling">
+<div  class="owl-carousel wrapper" id="m" style="clear:both;padding: 10px;overflow: hidden;width: 55%;height:75%;margin-bottom:2px !important;margin-right:10px;padding-left: 370px;padding-right: 370px;padding-bottom:0px;
+	;opacity: 0.9;border:4px solid black;">
+
+	<img src="images1.jpg">
+	<img src="images2.jpg">
+	<img src="images3.jpg">
+	<img src="images4.jpg">
+   	<img src="images5.jpg">
+   	<img src="images6.jpg">
+   	<img src="images7.jpg">
+   	<img src="images8.jpg">
+   	<img src="images9.jpg">    
+    <img src="images10.jpg">    
+</div></div><section>
+<div class="c" style="height: 700px;width: 45%;float: left;"><ul>
+	<li><h1 class="animated  bounceInLeft delay-3s"><span style="color: purple;font-size:50px;font-family:serif; margin-bottom: 100px;">CLUBS</span></h1></li>
+	<i><li><h1>VolleyBall</h1></li>
+	<li><h1>FootBall</h1></li>
+	<li><h1>Badminton</h1></li>
+	<li><h1>Swimming</h1></li></i></ul>
+
+</div><div class="d" style="height: 700px;width: 55%;float: left;
+                	">
+	<button class="e" style="padding-right: 50px;font-size: 50px;
+                    text-align: center;
+                	font-family: serif;">Start Training Now</button>
+	<h1 class="animated  flip delay-4s" style="color: white;font-size: 50px;text-align: center;">About The Club</h1><p class="animated  fadeInRight delay-3s" style="color:white;font-size: 30px;text-align: justify;"><span style="color: purple;font-size: 40px;">Sports Club</span>  includes all forms of competitive physical activity or games which,through casual or organised participation,at least in part aim to use,maintain or improve physical ability and skills while providing enjoyment to participants,and in some cases,entertainment for spectators.<br><br>Several games are included in the sports club.Anyone can join in this club with a reasonable fee.<a style="text-decoration: none;color: purple;" href="sports_club1.html"><i>to know  more....</i></a></p>
+
+	</div>
+
+
+
+</section>
+
+<script>
+$('#m').owlCarousel({
+    
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    dots:true,
+    autoplayTimeout:2000,
+    smartSpeed:2000,
+    responsive:{
+       0:{
+items:1
+ }
+ 
+    }
+});
+</script>
+
+
+
+</body>
+</html>

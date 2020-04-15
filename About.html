@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="animation/animate.min.css">
+	<style type="text/css">
+		.a #b{
+			text-decoration: none;
+			font-size: 35px;
+			padding: 20px;
+		    background-color: grey;
+			color: white;
+			display:inline-block;
+			float: right;
+			margin: 5px;
+			margin-bottom: 20px;
+
+		    }
+		    
+		    .a #b:hover{
+		    	background-color: orange;
+
+		    }
+		    
+		    #a{
+		    	float:left;
+		    }
+
+		    body{
+		    	background-color:black;
+		    	background-size: cover;
+		    }
+		    .a #b.active{
+		    	background-color:orange;
+		    }
+		 
+		    .scrolling img{
+            	height: 500px;
+            	width: 1200px;
+            
+            }
+            .scrolling{
+            	left: auto;
+            	right: auto;
+            	max-width: 1170;
+            	display: inline;
+            	border:grey;
+            	padding-top: 100px;
+
+
+            }
+            .c li{
+            	list-style-type: none;
+            	 }
+            .c li:hover{
+            	color:orange;
+            	
+
+            }
+            .c{
+            	margin-top: 10px;
+            	width: 50px;
+            	height: 50px;
+            	color: white;
+            	padding-top: 750px;
+            	border:grey;
+            }
+            
+	</style>
+	<title></title>
+	<link rel="stylesheet" href="owl\owl.carousel.min.css">
+<link rel="stylesheet" href="owl\owl.theme.default.min.css">
+<script src="owl/jquery.min.js"></script>
+<script src="owl/owl.carousel.js"></script>
+
+</head>
+<body>
+<div class="a"><nav>
+	<a id="a" href="About.html"><img src="logo1.png" height="100px" width="100px"></a>
+	<a id="b" href="Contact Us.html">Contact Us</a>
+	<a id="b" href="Subscription.html">Subscription</a>
+    <a id="b" href="Sports.html">Sports</a>
+	<a id="b" class="active" href="About.html">About</a>
+</nav></div>
+<div class="scrolling">
+<div  class="owl-carousel wrapper" id="m" style="clear:both;padding: 10px;overflow: hidden;width: 55%;height:75%;margin-bottom:2px !important;margin-right:10px;padding-left: 370px;padding-right: 370px;padding-bottom:0px;
+	;opacity: 0.9;border:4px solid white;">
+
+	<img src="images1.jpg">
+	<img src="images2.jpg">
+	<img src="images3.jpg">
+	<img src="images4.jpg">
+   	<img src="images5.jpg">
+   	<img src="images6.jpg">
+   	<img src="images7.jpg">
+   	<img src="images8.jpg">
+   	<img src="images9.jpg">    
+    <img src="images10.jpg">    
+</div></div>
+<div class="c"><ul>
+	<li><h1 class="animated infinite bounceInLeft delay-1s">Clubs</h1></li>
+	<li><h3>VolleyBall</h3></li>
+	<li><h3>FootBall</h3></li>
+	<li><h3>Batminton</h3></li>
+	<li><h3>Swimming</h3></li></ul>
+</div>
+
+
+<script>
+$('#m').owlCarousel({
+    
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    dots:true,
+    autoplayTimeout:2000,
+    smartSpeed:2000,
+    responsive:{
+       0:{
+items:1
+ }
+ 
+    }
+});
+</script>
+
+
+
+</body>
+</html>
